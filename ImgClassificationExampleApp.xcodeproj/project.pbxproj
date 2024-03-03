@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41BD8E12B94ED9C009FC4C9 /* JaguarOrLeopard.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E41BD8E02B94ED9C009FC4C9 /* JaguarOrLeopard.mlmodel */; };
 		E46DB4DC2B8E6E3A00597E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46DB4DB2B8E6E3A00597E88 /* AppDelegate.swift */; };
 		E46DB4DE2B8E6E3A00597E88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46DB4DD2B8E6E3A00597E88 /* SceneDelegate.swift */; };
 		E46DB4E02B8E6E3A00597E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46DB4DF2B8E6E3A00597E88 /* ViewController.swift */; };
 		E46DB4E32B8E6E3A00597E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46DB4E12B8E6E3A00597E88 /* Main.storyboard */; };
 		E46DB4E52B8E6E3B00597E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46DB4E42B8E6E3B00597E88 /* Assets.xcassets */; };
 		E46DB4E82B8E6E3B00597E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46DB4E62B8E6E3B00597E88 /* LaunchScreen.storyboard */; };
+		E46DB4F02B8E6E7200597E88 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46DB4EF2B8E6E7200597E88 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E41BD8E02B94ED9C009FC4C9 /* JaguarOrLeopard.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = JaguarOrLeopard.mlmodel; sourceTree = "<group>"; };
 		E46DB4D82B8E6E3A00597E88 /* ImgClassificationExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgClassificationExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46DB4DB2B8E6E3A00597E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46DB4DD2B8E6E3A00597E88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E46DB4E42B8E6E3B00597E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46DB4E72B8E6E3B00597E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46DB4E92B8E6E3B00597E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46DB4EF2B8E6E7200597E88 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		E46DB4DA2B8E6E3A00597E88 /* ImgClassificationExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				E41BD8E02B94ED9C009FC4C9 /* JaguarOrLeopard.mlmodel */,
 				E46DB4DB2B8E6E3A00597E88 /* AppDelegate.swift */,
 				E46DB4DD2B8E6E3A00597E88 /* SceneDelegate.swift */,
 				E46DB4DF2B8E6E3A00597E88 /* ViewController.swift */,
+				E4C27F2E2B94D6E8009B2AE9 /* Extension */,
 				E46DB4E12B8E6E3A00597E88 /* Main.storyboard */,
-				E46DB4E42B8E6E3B00597E88 /* Assets.xcassets */,
 				E46DB4E62B8E6E3B00597E88 /* LaunchScreen.storyboard */,
+				E46DB4E42B8E6E3B00597E88 /* Assets.xcassets */,
 				E46DB4E92B8E6E3B00597E88 /* Info.plist */,
 			);
 			path = ImgClassificationExampleApp;
+			sourceTree = "<group>";
+		};
+		E4C27F2E2B94D6E8009B2AE9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E46DB4EF2B8E6E7200597E88 /* UIImage+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 				E46DB4E02B8E6E3A00597E88 /* ViewController.swift in Sources */,
 				E46DB4DC2B8E6E3A00597E88 /* AppDelegate.swift in Sources */,
 				E46DB4DE2B8E6E3A00597E88 /* SceneDelegate.swift in Sources */,
+				E41BD8E12B94ED9C009FC4C9 /* JaguarOrLeopard.mlmodel in Sources */,
+				E46DB4F02B8E6E7200597E88 /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +314,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +323,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariam.ImgClassificationExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +345,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +354,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mariam.ImgClassificationExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
